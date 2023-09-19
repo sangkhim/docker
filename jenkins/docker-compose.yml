@@ -6,5 +6,5 @@ services:
     container_name: jenkins_lts
     restart: always
     ports:
-      - "18080:8080"
+      - "18090:8080"
       - "50000:50000"

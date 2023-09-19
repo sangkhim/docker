@@ -1,0 +1,11 @@
+version: '1.0.0'
+
+services:
+  jenkins:
+    image: jenkins/jenkins:lts
+    command: start-dev
+    container_name: jenkins_lts
+    restart: always
+    ports:
+      - "18090:8080"
+      - "50000:50000"

@@ -1,0 +1,11 @@
+version: '1.0.0'
+
+services:
+  redis:
+    image: redis:7.0.12
+    container_name: keycloak_22.0.1
+    restart: always
+    ports:
+      - "16379:6379"
+    environment:
+      - requirepass=p@123456

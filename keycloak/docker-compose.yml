@@ -3,8 +3,8 @@ version: '3.8'
 services:
   keycloak:
     image: quay.io/keycloak/keycloak:22.0.1
-    command: start-dev
     container_name: keycloak_22.0.1
+    command: start-dev
     restart: always
     ports:
       - "18080:8080"

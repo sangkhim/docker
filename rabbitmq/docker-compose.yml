@@ -1,9 +1,5 @@
 version: '3.8'
 
-networks:
-  net_rabbitmq:
-    name: net_rabbitmq
-
 services:
   rabbit:
     image: rabbitmq:3.12.6-management
@@ -13,5 +9,3 @@ services:
       - "15672:15672"
       - "5672:5672"
       - "61613:61613"
-    networks:
-      - net_rabbitmq
